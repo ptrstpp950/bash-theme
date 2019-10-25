@@ -15,6 +15,7 @@ source <(kubectl completion bash | sed 's/kubectl/k/g')
 #kubectx and kubens
 export PATH=~/.kubectx:$PATH
 
+KUBE_PS1_SYMBOL_DEFAULT=${KUBE_PS1_SYMBOL_DEFAULT:-$'\u2388'} # k8s icon without space
 KUBE_PS1_NS_COLOR="142"        #from YELLOW 09
 KUBE_PS1_CTX_COLOR="37"        #from TEAL 09
 
